@@ -3,10 +3,11 @@
         <div class="Home">
             <div class="feature_card">
                 <router-link to="/movie/tt0409591"></router-link>
-                <img src="" alt="Naruto Poster" class="feature-img">
+                <img src="https://wallpaperaccess.com/full/930271.jpg" alt="Naruto Poster" class="feature-img">
                 <div class="detail">
                     <h3>Spider-Man</h3>
-                    Spider-Man is a superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy #15 in the Silver Age of Comic Books.
+                    <p>Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.
+                    </p>
                 </div>
             </div>
         </div>
@@ -18,3 +19,38 @@
 
     export default {}
 </script>
+
+
+<style lang="scss">
+    .Home{
+        .feature_card{
+            position: relative
+    }
+        .feature-img{
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        .detail{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.66);
+            padding: 16px;
+            z-index: 1;
+
+        }
+        h3{
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        p{
+            color: #FFFFFF;
+        }
+        }
+</style>
