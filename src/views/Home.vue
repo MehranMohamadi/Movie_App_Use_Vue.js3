@@ -58,5 +58,26 @@
         p{
             color: #FFFFFF;
         }
+
+        .search-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+
+            input{
+                display: block;
+                appearance: none;
+                border: none;
+                outline: none;
+                background: none;
+
+                &[type="text"]{
+                    width: 100%;
+                }
+            }
+
+        }
         }
 </style>
