@@ -3,7 +3,7 @@
         <router-link to="/">
             <h1>
       <span>
-        Mehran
+                 Mehran
       </span>
                 Movies
             </h1>
