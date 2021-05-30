@@ -17,7 +17,11 @@
                 <input type="text" placeholder="What are you looking for?" v-model="search"/>
                 <input type="submit" value="Search">
             </form>
-            <div class="Movie-list">Movies</div>
+            <div class="Movie-list">
+                <div class="movie">
+                    <div class="movie" v-for="movie in movies" :key="movie.imdbID"></div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -34,10 +38,12 @@
             const searchmovie = () => {
                 if (search.value !== "") {
                     fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
-                    .then(response=>response.json())
-                    .then(data=>{
-                        console.log(data);
-                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            movies.value=data.search;
+                            search.value='';
+                            console.log(movies.value)
+                        });
                 }
             }
 
