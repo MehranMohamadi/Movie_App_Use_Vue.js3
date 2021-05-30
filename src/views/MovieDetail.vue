@@ -38,5 +38,21 @@
 
 
 <style lang="scss">
+.movie-detail{
+    padding: 16px;
 
+
+    h2{
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    p{
+        color:#ffffff;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
 </style>
