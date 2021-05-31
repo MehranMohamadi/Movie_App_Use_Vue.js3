@@ -37,7 +37,7 @@
 
 <script>
     import {ref} from 'vue';
-
+    import env from "../env";
 
     export default {
         setup() {
@@ -46,10 +46,10 @@
 
             const searchmovie = () => {
                 if (search.value !== "") {
-                    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=4c9aab43&s=${search.value}`)
+                    fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
                         .then(response => response.json())
                         .then(data => {
-                            movies.value = data.search;
+                            movies.value = data;
                             search.value = '';
                             console.log(movies.value)
                         });
