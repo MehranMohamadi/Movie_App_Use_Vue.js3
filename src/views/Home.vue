@@ -1,13 +1,11 @@
 <template>
         <div class="Home">
             <div class="feature_card">
-                <router-link to="/movie/tt0409591">
-                    <img src="https://wallpaperaccess.com/full/930271.jpg" alt="SPIDERMAN Poster" class="feature-img">
+                <router-link to="/movie/tt2975590">
+                    <img src="https://www.teahub.io/photos/full/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg" alt="SPIDERMAN Poster" class="feature-img">
                     <div class="detail">
-                        <h3>Spider-Man</h3>
-                        <p>Peter Parker balances his life as an ordinary high school student in Queens with his
-                            superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the
-                            skies of New York City.
+                        <h3>Movie</h3>
+                        <p>Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
                         </p>
                     </div>
                 </router-link>

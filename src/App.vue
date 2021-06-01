@@ -5,7 +5,7 @@
       <span>
                  Mehran
       </span>
-                Movies
+                Movie
             </h1>
         </router-link>
     </header>

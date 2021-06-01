@@ -19,12 +19,12 @@
 
 
             onBeforeMount(() => {
-                fetch(`http://www/ombdapi.com/?apikey=${env.apikey}$i=${route.params.id}&plot
-                =full`)
+                fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&i=${route.params.id}`)
                     .then(response => response.json())
                     .then(data => {
-                        movie.value = data.Search;
-                        console.log(data)
+                        movie.value = data;
+
+
                     });
 
 
