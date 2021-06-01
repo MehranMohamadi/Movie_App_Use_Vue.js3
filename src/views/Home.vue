@@ -23,10 +23,10 @@
                     <router-link :to="'/movie/'+ movie.imdbID" class="movie-link">
                         <div class="product-image">
                             <img :src="movie.Poster" alt="MoviePoster"/>
-                            <div class="type">Type:{{movie.Type}}</div>
+                            <div class="type">{{movie.Type}}</div>
                         </div>
-                            <p class="year">Year:{{movie.Year}}</p>
-                            <h3>Title:{{movie.Title}}</h3>
+                            <p class="year">{{movie.Year}}</p>
+                            <h3>{{movie.Title}}</h3>
 
                     </router-link>
                 </div>
@@ -198,7 +198,7 @@
                         .year {
                             color: #aaa;
                             background-color: #496583;
-                            padding: 16px 8px;
+                            padding: 10px 10px 1px 8px;
                             flex: 1 1 100%;
 
                             font-size: 14px;
@@ -208,7 +208,7 @@
                             color: #ffffff;
                             font-weight: 600;
                             background-color: #496583;
-                            padding: 16px 8px;
+                            padding: 5px 8px 5px 8px;
                             flex: 1 1 100%;
                             border-radius: 0 0 8px 8px;
                             font-size: 18px;
