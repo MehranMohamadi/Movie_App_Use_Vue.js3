@@ -39,21 +39,28 @@
 
 
 <style lang="scss">
-.movie-detail{
-    padding: 16px;
+    .Movie_Detail {
+        padding: 16px;
 
 
-    h2{
-        color: #ffffff;
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 16px;
+        h2 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .feature-img {
+            display: flex;
+            max-width: 200PX;
+            margin-bottom: 16px;
+            align-items: center;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.4;
+        }
     }
-
-    p{
-        color:#ffffff;
-        font-size: 18px;
-        line-height: 1.4;
-    }
-}
 </style>
