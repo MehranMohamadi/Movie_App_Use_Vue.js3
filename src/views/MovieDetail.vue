@@ -24,6 +24,7 @@
                     .then(response => response.json())
                     .then(data => {
                         movie.value = data.Search;
+                        console.log(data)
                     });
 
 

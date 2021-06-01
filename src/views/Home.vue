@@ -50,7 +50,7 @@
                         .then(data => {
                             movies.value = data.Search;
                             search.value = "";
-                            console.log(data.Search);
+
 
                         });
                 }
