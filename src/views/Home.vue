@@ -1,5 +1,4 @@
 <template>
-    <div class="home">
         <div class="Home">
             <div class="feature_card">
                 <router-link to="/movie/tt0409591">
@@ -18,25 +17,21 @@
                 <input type="submit" value="Search">
             </form>
 
-            <div class="Movie-list">
+            <div class="movies-list">
 
-                    <div class="movie" v-for="movie in movies" :key="movie.imdbID">
-                        <router-link :to="'/movie/'+ movie.imdbID" class="movie-link">
-
-
+                <div class="movie" v-for="movie in movies" :key="movie.imdbID">
+                    <router-link :to="'/movie/'+ movie.imdbID" class="movie-link">
+                        <div class="product-image">
                             <img :src="movie.Poster" alt="MoviePoster"/>
                             <div class="type">Type:{{movie.Type}}</div>
-                            <div class="detail">
-                                <p class="year">Year:{{movie.Year}}</p>
-                                <h3>Title:{{movie.Title}}</h3>
-                            </div>
-                        </router-link>
+                        </div>
+                            <p class="year">Year:{{movie.Year}}</p>
+                            <h3>Title:{{movie.Title}}</h3>
 
-                    </div>
+                    </router-link>
                 </div>
-
+            </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -157,54 +152,54 @@
 
         }
 
-        .Movie-list {
+        .movies-list {
             display: flex;
             flex-wrap: wrap;
             margin: 0 8px;
-        }
-
-        .movie {
-            max-width: 50%;
-            flex: 1 1 50%;
-            padding: 16px 8px;
 
 
-            .movie-link {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
+            .movie {
+                max-width: 50%;
+                flex: 1 1 50%;
+                padding: 16px 8px;
 
 
-                .prouduct-image {
-                    position: relative;
-                    display: block;
+                .movie-link {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
 
 
-                    img {
+                    .product-image {
+                        position: relative;
                         display: block;
-                        width: 100%;
-                        height: 275px;
-                        object-fit: cover;
+
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 275px;
+                            object-fit: cover;
+                        }
+
+                        .type {
+                            position: absolute;
+                            padding: 8px 16px;
+                            background-color: #42B883;
+                            color: #ffffff;
+                            bottom: 16px;
+                            left: 0;
+                            text-transform: capitalize;
+                        }
                     }
 
-                    .type {
-                        position: absolute;
-                        padding: 8px 16px;
-                        background-color: #42B883;
-                        color: #ffffff;
-                        bottom: 16px;
-                        left: 0;
-                        text-transform: capitalize;
-                    }
 
-                    .detail {
-                        background-color: #496583;
-                        padding: 16px 8px;
-                        flex: 1 1 100%;
-                        border-radius: 0 0 8px 8px;
 
                         .year {
                             color: #aaa;
+                            background-color: #496583;
+                            padding: 16px 8px;
+                            flex: 1 1 100%;
 
                             font-size: 14px;
                         }
@@ -212,15 +207,18 @@
                         h3 {
                             color: #ffffff;
                             font-weight: 600;
+                            background-color: #496583;
+                            padding: 16px 8px;
+                            flex: 1 1 100%;
+                            border-radius: 0 0 8px 8px;
                             font-size: 18px;
                         }
-                    }
 
                 }
             }
+
+
         }
-
-
     }
 
 
