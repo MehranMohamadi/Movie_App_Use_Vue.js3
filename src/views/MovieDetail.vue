@@ -23,7 +23,7 @@
                 =full`)
                     .then(response => response.json())
                     .then(data => {
-                        movie.value = data;
+                        movie.value = data.Search;
                     });
 
 
